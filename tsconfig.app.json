@@ -18,13 +18,13 @@
     /* Alias */
     "baseUrl": "src",
     "paths": {
-      "app/*": ["app/*"],
-      "assets/*": ["assets/*"],
-      "modules/*": ["modules/*"],
-      "pages/*": ["pages/*"],
-      "types/*": ["types/*"],
-      "ui/*": ["ui/*"],
-      "utils/*": ["utils/*"],
+      "@app/*": ["app/*"],
+      "@assets/*": ["assets/*"],
+      "@modules/*": ["modules/*"],
+      "@pages/*": ["pages/*"],
+      "@types/*": ["types/*"],
+      "@ui/*": ["ui/*"],
+      "@utils/*": ["utils/*"],
     },
 
     /* Linting */
