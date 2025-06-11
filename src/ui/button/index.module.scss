@@ -7,18 +7,18 @@ button {
 
   // Variants
   &.primary {
-    background-color: #007bff;
-    color: white;
+    background-color: $bg-color-primary;
+    color: $color-white;
   }
 
   &.secondary {
     background-color: #6c757d;
-    color: white;
+    color: $color-white;
   }
 
   &.danger {
     background-color: #dc3545;
-    color: white;
+    color: $color-white;
   }
 
   // Sizes
@@ -39,8 +39,8 @@ button {
 
   &:disabled,
   &.disabled {
-    background-color: #ccc;
-    color: #666;
+    background-color: $bg-color-disable;
+    color: $color-disable;
     cursor: not-allowed;
     opacity: 0.6;
   }
@@ -48,7 +48,7 @@ button {
    &:hover:not(:disabled),
    &:active:not(:disabled) {
     background-color: #333333;
-    color: white;
+    color: $color-white;
     transform: scale(0.98);
   }
 }

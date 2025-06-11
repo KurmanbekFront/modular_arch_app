@@ -1,4 +1,4 @@
-import { CustomButton } from 'ui/button'
+import { CustomButton } from '@ui/button'
 
 function App() {
   return (
