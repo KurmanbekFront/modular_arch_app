@@ -1,0 +1,20 @@
+@use './reset.scss';
+
+html,
+body {
+  font-family: sans-serif;
+  background-color: $background;
+}
+
+html {
+  overflow: -moz-scrollbar-none;
+  -ms-overflow-style: none;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+.swiper-slide {
+  width: fit-content;
+}
