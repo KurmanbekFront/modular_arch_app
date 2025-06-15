@@ -1,5 +1,7 @@
 import type { FC } from 'react'
 
+import styles from './index.module.scss'
+
 export const Footer: FC = () => {
-  return <div>Footer</div>
+  return <footer className={styles.footer}>Footer</footer>
 }
