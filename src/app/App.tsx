@@ -1,4 +1,4 @@
-import { PokemonList } from '@modules/main-module/components/pokemon-list/view/PokemonList'
+import { PokemonList } from '@modules/main-module'
 import { CustomButton } from '@ui/button'
 
 function App() {
