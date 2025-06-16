@@ -1,5 +1,5 @@
 import type { FC } from 'react'
-import type { CustomButtonProps } from './types'
+import type { CustomButtonProps } from '../types'
 
 import styles from './index.module.scss'
 
