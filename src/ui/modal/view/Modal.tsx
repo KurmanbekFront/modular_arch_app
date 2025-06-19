@@ -1,5 +1,5 @@
 import type { FC } from 'react'
-import type { ModalProps } from '../types'
+import type { ModalProps } from '../types/types'
 import ReactDOM from 'react-dom'
 
 import styles from './index.module.scss'
