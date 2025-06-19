@@ -1,11 +1,11 @@
-import { PokemonList } from '@modules/main-module'
+import { About } from '@modules/about/components'
 import { Container } from '@ui/container'
 
-export const HomePage = () => {
+export const AboutPage = () => {
   return (
     <>
       <Container>
-        <PokemonList />
+        <About />
       </Container>
     </>
   )

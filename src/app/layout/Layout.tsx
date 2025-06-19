@@ -1,11 +1,12 @@
 import { Footer } from '@modules/footer'
 import { Header } from '@modules/header'
+import { Outlet } from 'react-router'
 
-export const Layout = ({ children }: { children: React.ReactNode }) => {
+export const Layout = () => {
   return (
     <>
       <Header />
-      <main>{children}</main>
+      <Outlet />
       <Footer />
     </>
   )

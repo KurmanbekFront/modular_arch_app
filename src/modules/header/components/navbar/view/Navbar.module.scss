@@ -1,0 +1,6 @@
+.navbar {
+   width: 500px;
+
+
+   @include flexbox(space-around, center, row)
+}
