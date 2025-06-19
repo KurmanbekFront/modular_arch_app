@@ -1,16 +1,14 @@
 import { Typography } from '@ui/typography'
 
+import { aboutText } from '@utils/constants/constants'
+
 export const About = () => {
+  const { title, desc } = aboutText
+
   return (
     <div>
-      <Typography as="h1">About Page</Typography>
-      <Typography>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi tenetur sed inventore
-        vero animi fugiat debitis nihil. Repudiandae in fugit sed tempore nesciunt et, aspernatur
-        atque deserunt hic labore veritatis, sunt quaerat. Deleniti est eos, rem aspernatur odit
-        sint porro cumque ratione eius accusantium, tempora eligendi voluptatem nesciunt asperiores
-        voluptate?
-      </Typography>
+      <Typography as="h1">{title}</Typography>
+      <Typography>{desc}</Typography>
     </div>
   )
 }
