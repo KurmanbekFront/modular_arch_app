@@ -1,6 +1,6 @@
 import type { FC, ReactNode } from 'react'
 
-import styles from './index.module.scss'
+import styles from './Typography.module.scss'
 
 type Variant = 'h1' | 'h2' | 'h3' | 'p' | 'span' | 'div'
 type Size = 'sm' | 'md' | 'lg' | 'xl'

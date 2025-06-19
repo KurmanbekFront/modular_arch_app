@@ -2,7 +2,7 @@ import type { FC } from 'react'
 import type { ModalProps } from '../types/types'
 import ReactDOM from 'react-dom'
 
-import styles from './index.module.scss'
+import styles from './Modal.module.scss'
 
 export const Modal: FC<ModalProps> = ({ isOpen, onClose, children }) => {
   if (!isOpen) return null

@@ -4,7 +4,7 @@ import { Modal } from '@ui/modal'
 import { Typography } from '@ui/typography'
 import { useState, type FC } from 'react'
 
-import styles from './index.module.scss'
+import styles from './HomePage.module.scss'
 
 export const HomePage: FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false)

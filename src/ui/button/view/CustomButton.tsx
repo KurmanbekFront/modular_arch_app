@@ -1,7 +1,7 @@
 import type { FC } from 'react'
 import type { CustomButtonProps } from '../types/types'
 
-import styles from './index.module.scss'
+import styles from './CustomButton.module.scss'
 
 export const CustomButton: FC<CustomButtonProps> = ({
   children,

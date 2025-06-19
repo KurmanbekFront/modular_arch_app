@@ -1,6 +1,6 @@
 import type { FC } from 'react'
 
-import styles from './index.module.scss'
+import styles from './Header.module.scss'
 
 export const Header: FC = () => {
   return <header className={styles.header}>Header</header>
