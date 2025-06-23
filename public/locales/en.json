@@ -2,13 +2,22 @@
     "navbar": {
         "home": "home",
         "about": "About us",
-        "player": "player"
+        "serviceproviders": "Service Providers",
+        "exporterbase": "The base of exporters",
+        "usefulmaterials": "Useful materials",
+        "contacts": "Contacts"
     },
     "about": {
         "title": "About us page",
         "description": "Lorem ipsum dolor, sit afmet consectetur adipisicing elit. Eligendi tenetur sed inventore vero animi fugiat debitis nihil. Repudiandae in fugit sed tempore nesciunt et, aspernatur atque deserunt hic labore veritatis, sunt quaerat. Deleniti est eos, rem aspernatur odit sint porro cumque ratione eius accusantium, tempora eligendi voluptatem nesciunt asperiores  voluptate?"
     },
-    "player": {
-        "description": "A complete course on Typescript from A to Z. We will analyze a huge amount of theory from TypeScript, consider real examples on TS. Visual theory"
+    "serviceproviders": {
+        "title": "Service providers page"
+    },
+    "exporterbase": {
+        "title": "The page of the database of exporters"
+    },
+    "usefulmaterials": {
+        "title": "Useful materials page"
     }
 }

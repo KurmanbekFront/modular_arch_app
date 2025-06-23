@@ -1,7 +1,9 @@
 export const PATHS = {
   home: '/',
   about: '/about',
-  player: '/player',
+  serviceproviders: '/serviceproviders',
+  exporterbase: '/exporterbase',
+  usefulmaterials: '/usefulmaterials',
 }
 
 export const navItem = [
@@ -14,16 +16,36 @@ export const navItem = [
     to: PATHS.about,
   },
   {
-    link: 'navbar.player',
-    to: PATHS.player,
+    link: 'navbar.serviceproviders',
+    to: PATHS.serviceproviders,
+  },
+  {
+    link: 'navbar.exporterbase',
+    to: PATHS.exporterbase,
+  },
+  {
+    link: 'navbar.usefulmaterials',
+    to: PATHS.usefulmaterials,
   },
 ]
 
-export const description = {
-  text: 'player.description',
+export const navItemContact = {
+  contacts: 'navbar.contacts',
+}
+
+export const serviceProvidersText = {
+  title: 'serviceproviders.title',
 }
 
 export const aboutText = {
   title: 'about.title',
   desc: 'about.description',
+}
+
+export const exporterBaseText = {
+  title: 'exporterbase.title',
+}
+
+export const usefulmaterials = {
+  title: 'usefulmaterials.title',
 }

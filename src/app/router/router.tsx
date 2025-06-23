@@ -16,8 +16,16 @@ export const router = createBrowserRouter([
         element: <Pages.AboutPage />,
       },
       {
-        path: PATHS.player,
-        element: <Pages.PlayerPage />,
+        path: PATHS.serviceproviders,
+        element: <Pages.ServiceProvidersPage />,
+      },
+      {
+        path: PATHS.exporterbase,
+        element: <Pages.ExporterBasePage />,
+      },
+      {
+        path: PATHS.usefulmaterials,
+        element: <Pages.UsefulMaterailsPage />,
       },
     ],
   },

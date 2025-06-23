@@ -1,13 +1,13 @@
 import { Typography } from '@ui/typography'
 import ReactPlayer from 'react-player/youtube'
-import { useTranslation } from 'react-i18next'
+// import { useTranslation } from 'react-i18next'
 
-import { description } from '@utils/constants/constants'
+// import { description } from '@utils/constants/constants'
 import styles from './Player.module.scss'
 
 export const Player = () => {
-  const { t } = useTranslation()
-  const { text } = description
+  // const { t } = useTranslation()
+  // const { text } = description
 
   return (
     <div>
@@ -20,7 +20,7 @@ export const Player = () => {
           controls
         />
       </div>
-      <Typography as="p">{t(text)}</Typography>
+      {/* <Typography as="p">{t(text)}</Typography> */}
     </div>
   )
 }

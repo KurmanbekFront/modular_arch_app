@@ -1,6 +1,13 @@
 .navbar {
-   width: 500px;
 
 
-   @include flexbox(space-around, center, row)
+   span {
+      margin-right: 20px;
+   }
+
+   div {
+      margin-left: 10px;
+   }
+
+   @include flexbox(space-around, normal, row)
 }

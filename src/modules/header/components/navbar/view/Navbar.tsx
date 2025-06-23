@@ -1,4 +1,4 @@
-import { navItem } from '@utils/constants/constants'
+import { navItem, navItemContact } from '@utils/constants/constants'
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 
@@ -10,22 +10,25 @@ export const Navbar = () => {
   const handleLanguageChange = (language: string | undefined) => {
     i18n.changeLanguage(language)
   }
+  const { contacts } = navItemContact
 
   return (
-    <nav className={styles.navbar}>
-      {navItem.map(({ link, to }) => (
-        <span key={to}>
-          <Link to={to}>{t(link)}</Link>
-        </span>
-      ))}
+    <>
+      <nav className={styles.navbar}>
+        {navItem.map(({ link, to }) => (
+          <span key={to}>
+            <Link to={to}>{t(link)}</Link>
+          </span>
+        ))}
+        <Link to="#anchor">{t(contacts)}</Link>
+        <div>
+          <button onClick={() => handleLanguageChange('en')}>EN</button>
 
-      <div>
-        <button onClick={() => handleLanguageChange('en')}>EN</button>
+          <button onClick={() => handleLanguageChange('ru')}>РУС</button>
 
-        <button onClick={() => handleLanguageChange('ru')}>РУС</button>
-
-        <button onClick={() => handleLanguageChange('ky')}>КЫР</button>
-      </div>
-    </nav>
+          <button onClick={() => handleLanguageChange('ky')}>КЫР</button>
+        </div>
+      </nav>
+    </>
   )
 }
