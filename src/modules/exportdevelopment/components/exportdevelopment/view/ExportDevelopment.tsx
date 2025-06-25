@@ -1,12 +1,11 @@
 import { Typography } from '@ui/typography'
+import { exportdevelopment } from '@utils/constants/constants'
 import { useTranslation } from 'react-i18next'
 
-import { serviceProvidersText } from '@utils/constants/constants'
-
-export const ServiceProviders = () => {
+export const ExportDevelopment = () => {
   const { t } = useTranslation()
 
-  const { title } = serviceProvidersText
+  const { title } = exportdevelopment
   return (
     <div>
       <Typography as="h1">{t(title)}</Typography>

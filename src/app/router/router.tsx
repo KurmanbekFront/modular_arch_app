@@ -16,16 +16,24 @@ export const router = createBrowserRouter([
         element: <Pages.AboutPage />,
       },
       {
-        path: PATHS.serviceproviders,
-        element: <Pages.ServiceProvidersPage />,
-      },
-      {
         path: PATHS.exporterbase,
         element: <Pages.ExporterBasePage />,
       },
       {
         path: PATHS.usefulmaterials,
         element: <Pages.UsefulMaterailsPage />,
+      },
+      {
+        path: PATHS.tradeinformation,
+        element: <Pages.TradeInformationPage />,
+      },
+      {
+        path: PATHS.exportdevelopment,
+        element: <Pages.ExportDevelopmentPage />,
+      },
+      {
+        path: PATHS.exportpromotion,
+        element: <Pages.ExportPromotionPage />,
       },
     ],
   },

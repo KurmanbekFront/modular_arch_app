@@ -5,19 +5,28 @@
         "serviceproviders": "Service Providers",
         "exporterbase": "The base of exporters",
         "usefulmaterials": "Useful materials",
-        "contacts": "Contacts"
+        "contacts": "Contacts",
+        "tradeinformation": "Trade information",
+        "exportdevelopment": "Export development",
+        "exportpromotion": "Export promotion"
     },
     "about": {
         "title": "About us page",
         "description": "Lorem ipsum dolor, sit afmet consectetur adipisicing elit. Eligendi tenetur sed inventore vero animi fugiat debitis nihil. Repudiandae in fugit sed tempore nesciunt et, aspernatur atque deserunt hic labore veritatis, sunt quaerat. Deleniti est eos, rem aspernatur odit sint porro cumque ratione eius accusantium, tempora eligendi voluptatem nesciunt asperiores  voluptate?"
-    },
-    "serviceproviders": {
-        "title": "Service providers page"
     },
     "exporterbase": {
         "title": "The page of the database of exporters"
     },
     "usefulmaterials": {
         "title": "Useful materials page"
+    },
+    "tradeinformation": {
+        "title": "Trade information page"
+    },
+    "exportdevelopment": {
+        "title": "Export development page"
+    },
+    "exportpromotion": {
+        "title": "Export development page"
     }
 }

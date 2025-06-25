@@ -15,13 +15,36 @@ export const Navbar = () => {
   return (
     <>
       <nav className={styles.navbar}>
-        {navItem.map(({ link, to }) => (
+        {/* {navItem.map(({ link, to }) => (
           <span key={to}>
             <Link to={to}>{t(link)}</Link>
           </span>
+        ))} */}
+
+        {navItem.map(({ link, to, subItems }) => (
+          <div key={link} className={styles.navItem}>
+            {/* <Link to={to}>{t(link)}</Link> */}
+
+            {subItems ? (
+              <span>{t(link)}</span>
+            ) : (
+              <Link to={to!}>{t(link)}</Link>
+            )}
+
+            {subItems && (
+              <div className={styles.dropdown}>
+                {subItems.map(({ link, to }) => (
+                  <Link key={to} to={to} className={styles.dropdownLink}>
+                    {t(link)}
+                  </Link>
+                ))}
+              </div>
+            )}
+          </div>
         ))}
+
         <Link to="#anchor">{t(contacts)}</Link>
-        <div>
+        <div className={styles.translateBtn}>
           <button onClick={() => handleLanguageChange('en')}>EN</button>
 
           <button onClick={() => handleLanguageChange('ru')}>РУС</button>

@@ -1,13 +1,43 @@
 .navbar {
+  
 
+  .translateBtn {
+    margin-left: 10px;
+  }
 
-   span {
-      margin-right: 20px;
-   }
+  .navItem {
+    margin-right: 20px;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+  }
 
-   div {
-      margin-left: 10px;
-   }
+  .dropdown {
+    position: absolute;
+    top: 100%;
+    left: -12%;
+    min-width: 160px;
+    background-color: white;
+    border: 1px solid #ccc;
+    z-index: 1000;
+    display: none;
+    flex-direction: column;
+  }
 
-   @include flexbox(space-around, normal, row)
+  .navItem:hover .dropdown {
+    display: flex;
+  }
+
+  .dropdownLink {
+    padding: 0.5rem 1rem;
+    background-color: white;
+    transition: background-color 0.2s ease-in-out;
+  }
+
+  .dropdownLink:hover {
+    background-color: #f0f0f0;
+  }
+
+  @include flexbox(space-around, normal, row);
 }
