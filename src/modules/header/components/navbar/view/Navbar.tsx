@@ -1,16 +1,15 @@
-import { navItem, navItemContact } from '@utils/constants/constants'
+import { navItem } from '@utils/constants/constants'
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 
 import styles from './Navbar.module.scss'
 
-export const Navbar = () => {
-  const { t, i18n } = useTranslation()
+interface NavbarProps {
+  children: React.ReactNode
+}
 
-  const handleLanguageChange = (language: string | undefined) => {
-    i18n.changeLanguage(language)
-  }
-  const { contacts } = navItemContact
+export const Navbar = ({ children }: NavbarProps) => {
+  const { t } = useTranslation()
 
   return (
     <>
@@ -42,15 +41,7 @@ export const Navbar = () => {
             )}
           </div>
         ))}
-
-        <Link to="#anchor">{t(contacts)}</Link>
-        <div className={styles.translateBtn}>
-          <button onClick={() => handleLanguageChange('en')}>EN</button>
-
-          <button onClick={() => handleLanguageChange('ru')}>РУС</button>
-
-          <button onClick={() => handleLanguageChange('ky')}>КЫР</button>
-        </div>
+        {children}
       </nav>
     </>
   )

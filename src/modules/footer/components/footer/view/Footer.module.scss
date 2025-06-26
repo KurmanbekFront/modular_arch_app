@@ -1,7 +1,8 @@
 .footer {
+    height: 30vh;
     padding: 40px;
     margin-top: 40px;
 
 
-    @include flexbox()
+    @include flexbox(space-between, center, column)
 }

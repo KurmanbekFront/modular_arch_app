@@ -11,10 +11,6 @@ export const PATHS = {
 
 export const navItem = [
   {
-    link: 'navbar.home',
-    to: PATHS.home,
-  },
-  {
     link: 'navbar.about',
     to: PATHS.about,
   },
