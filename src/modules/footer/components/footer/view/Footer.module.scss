@@ -1,8 +1,20 @@
 .footer {
-    height: 30vh;
-    padding: 40px;
-    margin-top: 40px;
+  height: 30vh;
+  padding: 40px;
+  margin-top: 40px;
 
+  div > div {
+    width: 100vh;
+    
+    @include flexbox(space-between, center, row);
+  }
 
-    @include flexbox(space-between, center, column)
+  .contactdata {
+    width: 35vh;
+    margin-bottom: 4vh;
+
+    @include flexbox(space-between, center, row);
+  }
+
+  @include flexbox(space-between, center, column);
 }

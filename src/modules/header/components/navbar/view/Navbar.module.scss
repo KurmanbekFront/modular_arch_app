@@ -1,6 +1,4 @@
 .navbar {
-  
-
   .translateBtn {
     margin-left: 10px;
   }
@@ -26,6 +24,7 @@
   }
 
   .navItem:hover .dropdown {
+    width: 27vh;
     display: flex;
   }
 
